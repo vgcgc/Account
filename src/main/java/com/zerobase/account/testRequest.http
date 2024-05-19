@@ -1,0 +1,23 @@
+### GET request to example server
+
+
+### Post
+POST http://localhost:8080/create-account
+Content-Type: application/json
+
+{
+  "clientId" : "eslee",
+  "accountBalance" : 0
+}
+
+### GET
+GET http://localhost:8080/select-account?clientId="eslee"
+
+### POST
+POST http://localhost:8080/delete-account
+Content-Type: application/json
+
+{
+  "clientId" : "eslee",
+  "accountNumber" : "0003333622"
+}
